@@ -3,11 +3,18 @@
   padding: 0 0 0 0;
 }
 
-body {
-  width: 464px;
+.wrapper {
+  margin: auto;
+  width: 460px;
 }
 
-div {
+.canvas {
+  width: 464px;
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.box {
   display: inline-block;
   margin: 0 0 0 0;
   vertical-align: top;
@@ -15,7 +22,5 @@ div {
 }
 
 button {
-  display: block;
-  margin: 15px;
-  height: 25px;
+  margin: 25px 0 15px 0;
 }

@@ -4,18 +4,18 @@ $(document).ready( function(){
   $('button').click(function(){
 
     // remove all div's
-    $('div').remove();
+    $('.box').remove();
     var ans = prompt("How big do you want the grid to be?");
 
     // to make the divs
     for (var i = 0; i < ans * ans; i++){
-      $('body').append('<div></div>');
+      $('div.canvas').append('<div class="box"></div>');
     }
 
     // to find the size of each div
     var boxSize = Math.floor(464 / ans) + 'px';
     boxSize.toString();
-    $('div').css({
+    $('.box').css({
       'width': boxSize,
       'height': boxSize,
     });
@@ -31,7 +31,7 @@ $(document).ready( function(){
       return color;
     }
 
-    $('div').hover(function(){
+    $('.box').hover(function(){
       $(this).css({
         'background-color': getRandomColor()
       });
